@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Provider1 from './context/ProviderML';
+import Provider2 from './context/ProviderBuscape';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider1>
+        <App />
+    </Provider1>
   </React.StrictMode>
 );
 
